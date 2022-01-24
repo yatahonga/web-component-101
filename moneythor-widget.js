@@ -27,7 +27,7 @@ class MoneythorWidget extends HTMLElement {
     if (name == 'data-type') {
       this.type = newValue;
     } else if (name == 'data-options') {
-      this.loadService('search-result', newValue);
+      this.loadService('my-service', newValue);
     }
   }
 }

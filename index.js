@@ -6,11 +6,11 @@ btn.addEventListener('click', async () => {
   let { showText } = await import('./app.js');
   showText();
 
-  let searchResult = await import('./search-result.js');
-  const searchResultTag = document.createElement('search-result');
-  searchResultTag.setAttribute(
+  let myService = await import('./my-service.js');
+  const myServiceTag = document.createElement('my-service');
+  myServiceTag.setAttribute(
     'data-options',
-    JSON.stringify({ name: 'Emil' })
+    JSON.stringify({ name: 'Bob' })
   );
-  document.body.appendChild(searchResultTag);
+  document.body.appendChild(myServiceTag);
 });
